@@ -1,0 +1,3 @@
+{"translations": [{"text": "Привет, мир", "detectedLanguageCode": "en"}]}
+{"translations": [{"text": "Зачем?", "detectedLanguageCode": "fr"}]}
+{"translations": [{"text": "Я прекрасна", "detectedLanguageCode": "de"}]}
