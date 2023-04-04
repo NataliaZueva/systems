@@ -1,0 +1,16 @@
+<?php
+
+$dns = "mysql:dbname=db_1;host=localhost"; 
+$user = "bemby";
+$pass = "bemdy1";
+$db = new PDO($dns, $user, $pass);
+
+$start = time();
+
+$names = ["abc", "bcd", "cde", "def", "efg", "egh", "ghi", "hij", "ijk", "jkl", "klm"]; 
+for ($i = 0; $i < 10000; $i++) { 
+	$n1 = array_rand($names);
+	$n2 = array_rand($names);
+	$sql = "insert into instructors (name, dept name) values (\"" . $n1 . "\"," . $n2 . ");"; 
+	$db->prepare ($sql)->execute () ;
+echo (time() - $start);
